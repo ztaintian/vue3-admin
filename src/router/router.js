@@ -33,7 +33,7 @@ export default [
       {
         path: 'js',
         name: 'js问题集',
-        component: view('Home')
+        component: view('Js')
       }
     ]
   },
@@ -47,7 +47,7 @@ export default [
       {
         path: 'js',
         name: 'js问题集',
-        component: view('Regex')
+        component: view('Js')
       }
     ]
   },
@@ -62,6 +62,34 @@ export default [
         path: 'regex',
         name: 'regex问题集',
         component: view('Regex')
+      }
+    ]
+  },
+  {
+    path: '/vue',
+    icon: 'el-icon-question',
+    noDropdown: false,
+    name: 'vue问题集',
+    component: Layout,
+    children: [
+      {
+        path: 'vue',
+        name: 'vue问题集',
+        component: view('Vue')
+      }
+    ]
+  },
+  {
+    path: '/wx',
+    icon: 'el-icon-question',
+    noDropdown: false,
+    name: 'wx问题集',
+    component: Layout,
+    children: [
+      {
+        path: 'wx',
+        name: 'wx问题',
+        component: view('Wx')
       }
     ]
   }

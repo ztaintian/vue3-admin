@@ -14,6 +14,11 @@
 export default {
   name: "News",
   components: {},
+  mounted() {
+    console.log(this.$api.getDate().then((data) => {
+      console.log('rege', data);
+    }));
+  },
   data() {
     return {
       list: [

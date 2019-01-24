@@ -6,9 +6,11 @@ import 'normalize.css'
 import '../static/css/index.styl'
 import './utils/rem'
 import './plugins/element.js'
+import * as api from './api/index'
 
 Vue.config.productionTip = false
-
+console.log(api);
+Object.defineProperty(Vue.prototype, '$api', { value: api })
 new Vue({
   router,
   store,
